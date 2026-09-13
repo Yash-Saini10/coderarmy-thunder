@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word & Character Counter</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        #card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 450px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 220px;
+            font-size: 18px;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            resize: none;
+            box-sizing: border-box;
+            outline: none;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea::placeholder {
+            color: #999;
+        }
+
+        textarea:focus {
+            border-color: #4f8ef7;
+        }
+
+        #stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            flex: 1;
+            background-color: #f0f4f8;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .stat-box p {
+            margin: 0 0 6px 0;
+            font-size: 14px;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .stat-box h2 {
+            margin: 0;
+            font-size: 42px;
+            color: #4f8ef7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Word & Character Counter</h1>
+    <div id="card">
+        <textarea id="comment" placeholder="Start typing here..."></textarea>
+        <div id="stats">
+            <div class="stat-box">
+                <p>Characters</p>
+                <h2 id="textCount">0</h2>
+            </div>
+            <div class="stat-box">
+                <p>Words</p>
+                <h2 id="wordCount">0</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

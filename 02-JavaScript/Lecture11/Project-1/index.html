@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <style>
+        body {
+            background-color: palegreen;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        #root {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            max-width: 600px;
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h2>Honesty is a best policy.</h2>
+        <button>New Quote</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
