@@ -1,0 +1,71 @@
+* { 
+    box-sizing: border-box; 
+}
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+h1 { 
+    color: #0f172a; 
+    margin: 0 0 5px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+#status {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0 25px;
+    height: 30px;
+    color: #64748b;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.cell {
+    background: #f1f5f9;
+    border: none;
+    font-size: 56px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.reset {
+    margin-top: 35px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #4f46e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.3);
+}
+
+button.reset:hover { 
+    background: #4338ca;
+    box-shadow: 0 6px 8px -1px rgba(79, 70, 229, 0.4);
+}
